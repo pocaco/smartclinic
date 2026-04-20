@@ -266,6 +266,14 @@ html {
     color: #ccc !important;
 }
 
+.fa-solid {
+    color: #ffc107
+}
+
+.fa-regular {
+    color: #ccc
+}
+
 /* Review Cards */
 .review-card {
     background-color: var(--light-blue-bg);

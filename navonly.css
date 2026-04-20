@@ -1,0 +1,67 @@
+/* ===== COLOR VARIABLES ===== */
+:root {
+    --light-blue-bg: #e3f2fd;
+    --light-blue: #90caf9;
+    --primary-blue: #42a5f5;
+    --dark-blue: #1565c0;
+    --white: #ffffff;
+    --off-white: #f8fbff;
+    --text-dark: #2c3e50;
+    --text-muted: #7f8c8d;
+}
+
+/* ===== GLOBAL STYLES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== NAVBAR ===== */
+#mainNavbar {
+    background-color: var(--white);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+    padding: 12px 0;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--dark-blue) !important;
+}
+
+.brand-plus {
+    color: var(--primary-blue);
+}
+
+.navbar-brand i {
+    color: var(--primary-blue);
+}
+
+.nav-link {
+    color: var(--text-dark) !important;
+    font-weight: 500;
+    margin: 0 5px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--primary-blue) !important;
+}
+
+.btn-login-nav {
+    background-color: var(--primary-blue);
+    color: var(--white) !important;
+    border: none;
+    border-radius: 25px;
+    padding: 8px 24px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-login-nav:hover {
+    background-color: var(--dark-blue);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(66, 165, 245, 0.4);
+}

@@ -1,9 +1,15 @@
 /* General Styles */
+
+:root {
+    --blue: rgb(0,0,0)
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 }
 
 body {

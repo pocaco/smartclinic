@@ -1,4 +1,3 @@
 # smartclinic
 pmj pba webdesign
-Hello //shakir
-hello taiks 
+a clinic website designed and coded by 3 dumb people

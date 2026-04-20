@@ -1,0 +1,387 @@
+/*
+    MediCare Plus - Student Project
+    CSS File
+    Course: CS301 - Web Development
+    NOTE: still working on making the hero img load properly :(
+*/
+
+/* ===== COLOR VARIABLES ===== */
+:root {
+    --light-blue-bg: #e3f2fd;
+    --light-blue: #90caf9;
+    --primary-blue: #42a5f5;
+    --dark-blue: #1565c0;
+    --white: #ffffff;
+    --off-white: #f8fbff;
+    --text-dark: #2c3e50;
+    --text-muted: #7f8c8d;
+}
+
+/* ===== GLOBAL STYLES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-dark);
+    background-color: var(--white);
+    overflow-x: hidden;
+}
+
+/* smooth scrolling - found this on stackoverflow */
+html {
+    scroll-behavior: smooth;
+}
+
+.text-highlight {
+    color: var(--primary-blue);
+}
+
+.text-light-blue {
+    color: var(--primary-blue) !important;
+}
+
+.bg-light-blue {
+    background-color: var(--light-blue-bg) !important;
+    color: var(--dark-blue) !important;
+}
+
+/* ===== NAVBAR ===== */
+#mainNavbar {
+    background-color: var(--white);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+    padding: 12px 0;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--dark-blue) !important;
+}
+
+.brand-plus {
+    color: var(--primary-blue);
+}
+
+.navbar-brand i {
+    color: var(--primary-blue);
+}
+
+.nav-link {
+    color: var(--text-dark) !important;
+    font-weight: 500;
+    margin: 0 5px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--primary-blue) !important;
+}
+
+.btn-login-nav {
+    background-color: var(--primary-blue);
+    color: var(--white) !important;
+    border: none;
+    border-radius: 25px;
+    padding: 8px 24px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-login-nav:hover {
+    background-color: var(--dark-blue);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(66, 165, 245, 0.4);
+}
+
+/* ===== HERO SECTION ===== */
+.hero-section {
+    background: linear-gradient(135deg, var(--off-white) 0%, var(--light-blue-bg) 100%);
+    padding: 140px 0 80px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-text .badge {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+
+.hero-img {
+    max-height: 450px;
+    box-shadow: 0 20px 60px rgba(66, 165, 245, 0.15);
+}
+
+/* ===== BUTTONS ===== */
+.btn-primary-custom {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    border: 2px solid var(--primary-blue);
+    border-radius: 30px;
+    padding: 12px 32px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+    background-color: var(--dark-blue);
+    border-color: var(--dark-blue);
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(66, 165, 245, 0.35);
+}
+
+.btn-outline-custom {
+    color: var(--primary-blue);
+    border: 2px solid var(--primary-blue);
+    border-radius: 30px;
+    padding: 12px 32px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    background: transparent;
+}
+
+.btn-outline-custom:hover {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+/* ===== SECTION HEADER ===== */
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-header h2 {
+    font-size: 2.2rem;
+}
+
+/* ===== SERVICES ===== */
+.services-section {
+    padding: 80px 0;
+    background-color: var(--white);
+}
+
+.service-card {
+    background-color: var(--white);
+    border: 1px solid var(--light-blue-bg);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(66, 165, 245, 0.15);
+    border-color: var(--light-blue);
+}
+
+.icon-circle {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, var(--light-blue-bg), var(--light-blue));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    color: var(--dark-blue);
+}
+
+/* ===== BOOKING ===== */
+.booking-section {
+    padding: 80px 0;
+    background-color: var(--light-blue-bg);
+}
+
+.booking-form-wrapper {
+    background-color: var(--white);
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+.booking-form-wrapper .form-control,
+.booking-form-wrapper .form-select {
+    border: 2px solid var(--light-blue-bg);
+    border-radius: 10px;
+    padding: 10px 15px;
+    transition: border-color 0.3s ease;
+}
+
+.booking-form-wrapper .form-control:focus,
+.booking-form-wrapper .form-select:focus {
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 3px rgba(66, 165, 245, 0.15);
+}
+
+/* ===== FEEDBACK ===== */
+.feedback-section {
+    padding: 80px 0;
+    background-color: var(--white);
+}
+
+.feedback-form-wrapper {
+    background-color: var(--light-blue-bg);
+    border-radius: 20px;
+}
+
+.feedback-form-wrapper .form-control {
+    border: 2px solid var(--light-blue);
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+
+.feedback-form-wrapper .form-control:focus {
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 3px rgba(66, 165, 245, 0.15);
+}
+
+/* Rating Stars */
+.rating-stars {
+    font-size: 1.5rem;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.rating-stars i {
+    transition: color 0.2s ease, transform 0.2s ease;
+    margin-right: 2px;
+}
+
+.rating-stars i.active,
+.rating-stars i:hover {
+    color: #ffc107;
+    transform: scale(1.2);
+}
+
+.rating-stars i:hover ~ i {
+    color: #ccc !important;
+}
+
+/* Review Cards */
+.review-card {
+    background-color: var(--light-blue-bg);
+    border-radius: 12px;
+    border-left: 4px solid var(--primary-blue);
+    transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateX(5px);
+}
+
+/* ===== LOGIN MODAL ===== */
+.modal-content {
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.modal-header {
+    background: linear-gradient(135deg, var(--primary-blue), var(--dark-blue));
+    color: var(--white);
+    border: none;
+}
+
+.modal-header .modal-title {
+    color: var(--white);
+}
+
+.modal-header .btn-close {
+    filter: brightness(0) invert(1);
+}
+
+.btn-login-submit {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-login-submit:hover {
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
+
+#loginForm .form-control,
+#signupForm .form-control {
+    border: 2px solid var(--light-blue-bg);
+    border-radius: 10px;
+}
+
+#loginForm .form-control:focus,
+#signupForm .form-control:focus {
+    border-color: var(--primary-blue);
+}
+
+/* ===== FOOTER ===== */
+.footer-section {
+    background-color: var(--off-white);
+    padding: 50px 0 20px;
+    border-top: 3px solid var(--light-blue-bg);
+}
+
+.footer-section h5 {
+    color: var(--dark-blue);
+    font-weight: 700;
+}
+
+.footer-section a {
+    color: var(--text-muted);
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: var(--primary-blue);
+}
+
+.social-links a {
+    color: var(--primary-blue);
+}
+
+.social-links a:hover {
+    color: var(--dark-blue);
+}
+
+/* ===== ANIMATIONS (found on codepen) ===== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 120px 0 60px;
+        text-align: center;
+    }
+
+    .hero-section .btn {
+        margin-bottom: 10px;
+    }
+
+    .section-header h2 {
+        font-size: 1.8rem;
+    }
+}

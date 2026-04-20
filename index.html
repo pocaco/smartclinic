@@ -1,486 +1,310 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCare Plus - Student Project</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
 
-        <meta name="description" content="">
-        <meta name="author" content="">
+    <!-- ==================== NAVBAR / HEADER ==================== -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fa-solid fa-heart-pulse"></i> MediCare<span class="brand-plus">Plus</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navLinks">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#booking">Booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#feedback">Feedback</a>
+                    </li>
+                    <!-- Login Button -->
+                    <li class="nav-item ms-lg-2">
+                        <button class="btn btn-login-nav" data-bs-toggle="modal" data-bs-target="#loginModal">
+                            <i class="fa-solid fa-user"></i> Login
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-        <title>Medic Care Bootstrap 5 CSS Template</title>
-
-        <!-- CSS FILES -->        
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-
-        <link href="css/bootstrap-icons.css" rel="stylesheet">
-
-        <link href="css/owl.carousel.min.css" rel="stylesheet">
-
-        <link href="css/owl.theme.default.min.css" rel="stylesheet">
-
-        <link href="css/templatemo-medic-care.css" rel="stylesheet">
-<!--
-
-TemplateMo 566 Medic Care
-
-https://templatemo.com/tm-566-medic-care
-
--->
-    </head>
-    
-    <body id="top">
-    
-        <main>
-
-            <nav class="navbar navbar-expand-lg bg-light fixed-top shadow-lg">
-                <div class="container">
-                    <a class="navbar-brand mx-auto d-lg-none" href="index.html">
-                        Medic Care
-                        <strong class="d-block">Health Specialist</strong>
-                    </a>
-
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav mx-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#hero">Home</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="#about">About</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="#timeline">Timeline</a>
-                            </li>
-
-                            <a class="navbar-brand d-none d-lg-block" href="index.html">
-                                Medic Care
-                                <strong class="d-block">Health Specialist</strong>
-                            </a>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="#reviews">Testimonials</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="#booking">Booking</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="#contact">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-
+    <!-- ==================== LOGIN MODAL ==================== -->
+    <div class="modal fade" id="loginModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><i class="fa-solid fa-user-doctor"></i> Login to MediCare Plus</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
-            </nav>
-
-            <section class="hero" id="hero">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-12">
-                            <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src="images/slider/portrait-successful-mid-adult-doctor-with-crossed-arms.jpg" class="img-fluid" alt="">
-                                    </div>
-
-                                    <div class="carousel-item">
-                                        <img src="images/slider/young-asian-female-dentist-white-coat-posing-clinic-equipment.jpg" class="img-fluid" alt="">
-                                    </div>
-
-                                    <div class="carousel-item">
-                                        <img src="images/slider/doctor-s-hand-holding-stethoscope-closeup.jpg" class="img-fluid" alt="">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="heroText d-flex flex-column justify-content-center">
-
-                                <h1 class="mt-auto mb-2">
-                                    Better
-                                    <div class="animated-info">
-                                        <span class="animated-item">health</span>
-                                        <span class="animated-item">days</span>
-                                        <span class="animated-item">lives</span>
-                                    </div>
-                                </h1>
-
-                                <p class="mb-4">Medic Care is a Bootstrap 5 Template provided by TemplateMo website. Credits go to FreePik and RawPixel for images used in this template.</p>
-
-                                <div class="heroLinks d-flex flex-wrap align-items-center">
-                                    <a class="custom-link me-4" href="#about" data-hover="Learn More">Learn More</a>
-
-                                    <p class="contact-phone mb-0"><i class="bi-phone"></i> 010-020-0340</p>
-                                </div>
+                <div class="modal-body">
+                    <form id="loginForm">
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="loginEmail" placeholder="you@example.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">Password</label>
+                            <div class="input-group">
+                                <input type="password" class="form-control" id="loginPassword" placeholder="Enter password" required>
+                                <button class="btn btn-outline-secondary" type="button" id="togglePassword">
+                                    <i class="fa-solid fa-eye"></i>
+                                </button>
                             </div>
                         </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Remember me</label>
+                        </div>
+                        <div id="loginError" class="text-danger mb-2" style="display:none;"></div>
+                        <button type="submit" class="btn btn-login-submit w-100">Login</button>
+                    </form>
+                    <hr>
+                    <p class="text-center text-muted small">Don't have an account? <a href="#" id="showSignup">Sign up</a></p>
 
+                    <!-- Signup form (hidden by default) -->
+                    <form id="signupForm" style="display:none;">
+                        <h6 class="mb-3">Create Account</h6>
+                        <div class="mb-3">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="signupName" placeholder="John Doe" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="signupEmail" placeholder="you@example.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Password</label>
+                            <input type="password" class="form-control" id="signupPassword" placeholder="Min 6 characters" required minlength="6">
+                            <small class="form-text text-muted">Password must be at least 6 characters long.</small>
+                        </div>
+                        <div id="signupError" class="text-danger mb-2" style="display:none;"></div>
+                        <button type="submit" class="btn btn-login-submit w-100">Sign Up</button>
+                        <p class="text-center mt-2 small"><a href="#" id="showLogin">Already have an account? Login</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero-text">
+                    <span class="badge bg-light-blue mb-3">Your Health, Our Priority 💙</span>
+                    <h1 class="display-4 fw-bold">Welcome to <br><span class="text-highlight">MediCare Plus</span></h1>
+                    <p class="lead mt-3">We provide quality healthcare services for you and your family. Book appointments, explore our services, and share your feedback — all in one place.</p>
+                    <div class="mt-4">
+                        <a href="#booking" class="btn btn-primary-custom me-2">Book Appointment</a>
+                        <a href="#services" class="btn btn-outline-custom">Our Services</a>
                     </div>
                 </div>
-            </section>
-
-            <section class="section-padding" id="about">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <h2 class="mb-lg-3 mb-3">Meet Dr. Carson</h2>
-
-                            <p>Protect yourself and others by wearing masks and washing hands frequently. Outdoor is safer than indoor for gatherings or holding events. People who get sick with Coronavirus disease (COVID-19) will experience mild to moderate symptoms and recover without special treatments.</p>
-
-                            <p>You can feel free to use this CSS template for your medical profession or health care related websites. You can <a rel="nofollow" href="http://paypal.me/templatemo" target="_blank">support us a little</a> via PayPal if this template is good and useful for your work.</p>
-                        </div>
-
-                        <div class="col-lg-4 col-md-5 col-12 mx-auto">
-                            <div class="featured-circle bg-white shadow-lg d-flex justify-content-center align-items-center">
-                                <p class="featured-text"><span class="featured-number">12</span> Years<br> of Experiences</p>
-                            </div>
-                        </div>
-
-                    </div>
+                <div class="col-lg-6 text-center mt-5 mt-lg-0">
+                    <img src="https://img.freepik.com/free-vector/doctors-concept-illustration_114360-1515.jpg?w=400"
+                         alt="Doctors Illustration" class="img-fluid hero-img rounded"
+                         loading="lazy"
+                         onerror="this.src='https://via.placeholder.com/400x300/e3f2fd/42a5f5?text=MediCare+Plus'">
                 </div>
-            </section>
+            </div>
+        </div>
+    </section>
 
-            <section class="gallery">
-                <div class="container">
-                    <div class="row">
+    <!-- ==================== SERVICES SECTION ==================== -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="fw-bold">Our <span class="text-highlight">Services</span></h2>
+                <p class="text-muted">We offer a wide range of medical services to keep you healthy</p>
+            </div>
+          <h2 class="text-center mb-5">Click Here to Explore Our Services</h2>
+          <button class="btn btn-primary-custom d-block mx-auto" id="exploreServices">
+            <i class="fa-solid fa-stethoscope me-1"></i> Explore Services
+          </button>
+        </div>
+    </section>
 
-                        <div class="col-lg-6 col-6 ps-0">
-                            <img src="images/gallery/medium-shot-man-getting-vaccine.jpg" class="img-fluid galleryImage" alt="get a vaccine" title="get a vaccine for yourself">
-                        </div>
-
-                        <div class="col-lg-6 col-6 pe-0">
-                            <img src="images/gallery/female-doctor-with-presenting-hand-gesture.jpg" class="img-fluid galleryImage" alt="wear a mask" title="wear a mask to protect yourself">
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-            <section class="section-padding pb-0" id="timeline">
-                <div class="container">
-                    <div class="row">
-
-                        <h2 class="text-center mb-lg-5 mb-4">Our Timeline</h2>
-                        
-                        <div class="timeline">
-                            <div class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes">
-                                <div class="col-9 col-md-5 me-md-4 me-lg-0 order-3 order-md-1 timeline-content bg-white shadow-lg">
-                                    <h3 class=" text-light">Get the vaccine</h3>
-
-                                    <p>Donec facilisis urna dui, a dignissim mauris pretium a. Quisque quis libero fermentum, tempus felis eu, consequat nibh.</p>
-                                </div>
-
-                                <div class="col-3 col-sm-1 order-2 timeline-icons text-md-center">
-                                    <i class="bi-patch-check-fill timeline-icon"></i>
-                                </div>
-
-                                <div class="col-9 col-md-5 ps-md-3 ps-lg-0 order-1 order-md-3 py-4 timeline-date">
-                                    <time>2021-07-31 Saturday</time>
-                                </div>
-                            </div>
-
-                            <div class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes my-lg-5 my-4">
-                                <div class="col-9 col-md-5 ms-md-4 ms-lg-0 order-3 order-md-1 timeline-content bg-white shadow-lg">
-                                    <h3 class=" text-light">Consulting your health</h3>
-
-                                    <p>You are fully permitted to use this template for your commercial or personal website. You are not permitted to redistribute the template ZIP file for a download purpose on any other <a href="https://www.google.com/search?q=free+css" target="_blank">Free CSS collection</a> website.</p>
-                                </div>
-
-                                <div class="col-3 col-sm-1 order-2 timeline-icons text-md-center">
-                                    <i class="bi-book timeline-icon"></i>
-                                </div>
-
-                                <div class="col-9 col-md-5 pe-md-3 pe-lg-0 order-1 order-md-3 py-4 timeline-date">
-                                    <time>2021-07-15 Thursday</time>
-                                </div>
-                            </div>
-
-                            <div class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes">
-                                <div class="col-9 col-md-5 me-md-4 me-lg-0 order-3 order-md-1 timeline-content bg-white shadow-lg">
-                                    <h3 class=" text-light">Certified Nurses</h3>
-
-                                    <p>Phasellus eleifend, urna interdum congue viverra, arcu neque ultrices ligula, id pulvinar nisi nibh et lacus. Vivamus gravida, ipsum non euismod tincidunt, sapien elit fermentum mi, quis iaculis enim ligula at arcu.</p>
-                                </div>
-
-                                <div class="col-3 col-sm-1 order-2 timeline-icons text-md-center">
-                                    <i class="bi-file-medical timeline-icon"></i>
-                                </div>
-
-                                <div class="col-9 col-md-5 ps-md-3 ps-lg-0 order-1 order-md-3 py-4 timeline-date">
-                                    <time>2021-06-28 Monday</time>
-                                </div>
-                            </div>
-
-                            <div class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes my-lg-5 my-4">
-                                <div class="col-9 col-md-5 ms-md-4 ms-lg-0 order-3 order-md-1 timeline-content bg-white shadow-lg">
-                                    <h3 class=" text-light">Covid-19 Hospitals</h3>
-
-                                    <p class="mb-0 pb-0">Fusce vestibulum euismod nulla sed ultrices. Praesent rutrum nulla vel sapien euismod, quis tempus dui placerat.</p>
-                                    
-                                    <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla</p>
-                                </div>
-
-                                <div class="col-3 col-sm-1 order-2 timeline-icons text-md-center">
-                                    <i class="bi-globe timeline-icon"></i>
-                                </div>
-
-                                <div class="col-9 col-md-5 pe-md-3 pe-lg-0 order-1 order-md-3 py-4 timeline-date">
-                                    <time>2021-05-30 Sunday</time>
-                                </div>
-                            </div>
-
-                            <div class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes">
-                                <div class="col-9 col-md-5 me-md-4 me-lg-0 order-3 order-md-1 timeline-content bg-white shadow-lg">
-                                    <h3 class=" text-light">Freelance Nursing</h3>
-
-                                    <p>If you need a working contact form that submits email to your inbox, please <a rel="nofollow" href="https://templatemo.com/contact" target="_parent">visit our contact page</a> for more information.</p>
-                                </div>
-
-                                <div class="col-3 col-sm-1 order-2 timeline-icons text-md-center">
-                                    <i class="bi-person timeline-icon"></i>
-                                </div>
-
-                                <div class="col-9 col-md-5 ps-md-3 ps-lg-0 order-1 order-md-3 py-4 timeline-date">
-                                    <time>2021-05-18 Tuesday</time>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-            <section class="section-padding pb-0" id="reviews">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-12">
-                            <h2 class="text-center mb-lg-5 mb-4">Our Patients</h2>
-
-                            <div class="owl-carousel reviews-carousel">
-
-                                <figure class="reviews-thumb d-flex flex-wrap align-items-center rounded">
-                                    <div class="reviews-stars">
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star"></i>
-                                    </div>
-
-                                    <p class="text-primary d-block mt-2 mb-0 w-100"><strong>Best Health Care</strong></p>
-
-                                    <p class="reviews-text w-100">Phasellus ligula ante, tempus ac imperdiet ut, mattis ac nibh. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-
-                                    <img src="images/reviews/beautiful-woman-face-portrait-brown-background.jpeg" class="img-fluid reviews-image" alt="">
-
-                                    <figcaption class="ms-4">
-                                        <strong>Marie</strong>
-
-                                        <span class="text-muted">Patient</span>
-                                    </figcaption>
-                                </figure>
-
-                                <figure class="reviews-thumb d-flex flex-wrap align-items-center rounded">
-                                    <div class="reviews-stars">
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star"></i>
-                                    </div>
-
-                                    <p class="text-primary d-block mt-2 mb-0 w-100"><strong>Doctor cares everyone!</strong></p>
-
-                                    <p class="reviews-text w-100">Donec in elementum orci, nec posuere ligula. Quisque vulputate diam et ullamcorper ullamcorper. Pellentesque vestibulum neque at leo fermentum mattis.</p>
-
-                                    <img src="images/reviews/senior-man-wearing-white-face-mask-covid-19-campaign-with-design-space.jpeg" class="img-fluid reviews-image" alt="">
-
-                                    <figcaption class="ms-4">
-                                        <strong>Ben Walker</strong>
-
-                                        <span class="text-muted">Recovered</span>
-                                    </figcaption>
-                                </figure>
-
-                                <figure class="reviews-thumb d-flex flex-wrap align-items-center rounded">
-                                    <div class="reviews-stars">
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star-fill"></i>
-                                    </div>
-
-                                    <p class="text-primary d-block mt-2 mb-0 w-100"><strong>Great services!</strong></p>
-
-                                    <p class="reviews-text w-100">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec sit amet velit vitae purus aliquam efficitur.</p>
-
-                                    <img src="images/reviews/portrait-british-woman.jpeg" class="img-fluid reviews-image" alt="">
-
-                                    <figcaption class="ms-4">
-                                        <strong>Laura Zono</strong>
-
-                                        <span class="text-muted">New Patient</span>
-                                    </figcaption>
-                                </figure>
-
-                                <figure class="reviews-thumb d-flex flex-wrap align-items-center rounded">
-                                    <div class="reviews-stars">
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star"></i>
-                                        <i class="bi-star"></i>
-                                    </div>
-
-                                    <p class="text-primary d-block mt-2 mb-0 w-100"><strong>Best Advices</strong></p>
-
-                                    <p class="reviews-text w-100">Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla.</p>
-
-                                    <img src="images/reviews/woman-wearing-mask-face-closeup-covid-19-green-background.jpeg" class="img-fluid reviews-image" alt="">
-
-                                    <figcaption class="ms-4">
-                                        <strong>Rosey</strong>
-
-                                        <span class="text-muted">Almost Recovered</span>
-                                    </figcaption>
-                                </figure>
-                               
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-            <section class="section-padding" id="booking">
-                <div class="container">
-                    <div class="row">
+    <!-- ==================== BOOKING SECTION ==================== -->
+    <section id="booking" class="booking-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <h2 class="fw-bold">Book an <span class="text-highlight">Appointment</span></h2>
                     
-                        <div class="col-lg-8 col-12 mx-auto">
-                            <div class="booking-form">
-                                
-                                <h2 class="text-center mb-lg-3 mb-2">Book an appointment</h2>
-                            
-                                <form role="form" action="#booking" method="post">
-                                    <div class="row">
-                                        <div class="col-lg-6 col-12">
-                                            <input type="text" name="name" id="name" class="form-control" placeholder="Full name" required>
-                                        </div>
+                    <ul class="list-unstyled mt-4">
+                        <li class="mb-2"><i class="fa-solid fa-phone text-light-blue me-2"></i> Call us: <strong>(555) 123-4567</strong></li>
+                        <li class="mb-2"><i class="fa-solid fa-envelope text-light-blue me-2"></i> Email: <strong>info@medicareplus.com</strong></li>
+                        <li class="mb-2"><i class="fa-solid fa-location-dot text-light-blue me-2"></i> Address: <strong>123 Health St, Medicity</strong></li>
+                        <li><i class="fa-solid fa-clock text-light-blue me-2"></i> Hours: <strong>Mon-Sat, 8AM - 8PM</strong></li>
+                    </ul>
+                </div>
+                <div class="col-lg-7">
+                    <div class="booking-card p-4 rounded shadow-sm text-center">
+                        <h3 class="fw-bold mb-3">Booking Your Appointment</h3>
+                        <p class="text-muted mb-4">Schedule your visit in a few clicks and receive confirmation instantly.</p>
+                        <button class="btn btn-primary-custom" id="bookNow">
+                            <i class="fa-solid fa-calendar-check me-1"></i> Book Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                                        <div class="col-lg-6 col-12">
-                                            <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required>
-                                        </div>
+    <!-- ==================== FEEDBACK SECTION ==================== -->
+    <section id="feedback" class="feedback-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="fw-bold">Patient <span class="text-highlight">Feedback</span></h2>
+                <p class="text-muted">Your feedback helps us improve our services</p>
+            </div>
 
-                                        <div class="col-lg-6 col-12">
-                                            <input type="telephone" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="form-control" placeholder="Phone: 123-456-7890">
-                                        </div>
-
-                                        <div class="col-lg-6 col-12">
-                                            <input type="date" name="date" id="date" value="" class="form-control">
-                                            
-                                        </div>
-
-                                        <div class="col-12">
-                                            <textarea class="form-control" rows="5" id="message" name="message" placeholder="Additional Message"></textarea>
-                                        </div>
-
-                                        <div class="col-lg-3 col-md-4 col-6 mx-auto">
-                                            <button type="submit" class="form-control" id="submit-button">Book Now</button>
-                                        </div>
-                                    </div>
-                                </form>
-
+            <div class="row g-4">
+                <!-- Feedback Form -->
+                <div class="col-lg-5">
+                    <div class="feedback-form-wrapper p-4">
+                        <h5 class="mb-3">Leave Your Feedback</h5>
+                        <form id="feedbackForm">
+                            <div class="mb-3">
+                                <label class="form-label">Your Name</label>
+                                <input type="text" class="form-control" id="feedName" placeholder="Your name" required>
                             </div>
+                            <div class="mb-3">
+                                <label class="form-label">Rating</label>
+                                <div class="rating-stars" id="ratingStars">
+                                    <i class="fa-regular fa-star" data-value="1"></i>
+                                    <i class="fa-regular fa-star" data-value="2"></i>
+                                    <i class="fa-regular fa-star" data-value="3"></i>
+                                    <i class="fa-regular fa-star" data-value="4"></i>
+                                    <i class="fa-regular fa-star" data-value="5"></i>
+                                <input type="hidden" id="feedRating" value="0">
+                                <small class="text-muted" id="ratingText">Click a star to rate</small>
+                                <!-- Error message placeholder for rating validation -->
+                                <small class="text-muted" id="ratingText">Click a star to rate</small>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Your Feedback</label>
+                                <textarea class="form-control" id="feedMessage" rows="4" placeholder="Tell us about your experience..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary-custom w-100">
+                                <i class="fa-solid fa-paper-plane me-1"></i> Submit Feedback
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Displayed Reviews -->
+                <div class="col-lg-7">
+                    <h5 class="mb-3">Recent Reviews</h5>
+                    <div id="reviewsContainer">
+                        <!-- Pre-existing reviews -->
+                        <div class="review-card mb-3 p-3">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <div>
+                                    <strong>Sarah Johnson</strong>
+                                    <div class="text-warning small">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <small class="text-muted">2 days ago</small>
+                            </div>
+                            <p class="mb-0 mt-2 small text-muted">"Great experience! The staff was very friendly and the doctor was thorough. Highly recommend!"</p>
                         </div>
-
+                        <div class="review-card mb-3 p-3">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <div>
+                                    <strong>Mike Peters</strong>
+                                    <div class="text-warning small">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                                <small class="text-muted">1 week ago</small>
+                            </div>
+                            <p class="mb-0 mt-2 small text-muted">"Very convenient booking system. Wait time was minimal. Will definitely come back."</p>
+                        </div>
+                        <div class="review-card mb-3 p-3">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <div>
+                                    <strong>Emily Chen</strong>
+                                    <div class="text-warning small">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <small class="text-muted">2 weeks ago</small>
+                            </div>
+                            <p class="mb-0 mt-2 small text-muted">"Brought my kids for a checkup. The pediatrician was amazing with them! Very patient and kind."</p>
+                        </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </div>
+    </section>
 
-        </main>
-
-        <footer class="site-footer section-padding" id="contact">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-5 me-auto col-12">
-                        <h5 class="mb-lg-4 mb-3">Opening Hours</h5>
-
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item d-flex">
-                                Sunday : Closed
-                            </li>
-
-                            <li class="list-group-item d-flex">
-                                Monday, Tuesday - Firday
-                                <span>8:00 AM - 3:30 PM</span>
-                            </li>
-
-                            <li class="list-group-item d-flex">
-                                Saturday
-                                <span>10:30 AM - 5:30 PM</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-2 col-md-6 col-12 my-4 my-lg-0">
-                        <h5 class="mb-lg-4 mb-3">Our Clinic</h5>
-
-                        <p><a href="mailto:hello@company.co">hello@company.co</a><p>
-
-                        <p>123 Digital Art Street, San Diego, CA 92123</p>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-12 ms-auto">
-                        <h5 class="mb-lg-4 mb-3">Socials</h5>
-
-                        <ul class="social-icon">
-                            <li><a href="#" class="social-icon-link bi-facebook"></a></li>
-
-                            <li><a href="#" class="social-icon-link bi-twitter"></a></li>
-
-                            <li><a href="#" class="social-icon-link bi-instagram"></a></li>
-
-                            <li><a href="#" class="social-icon-link bi-youtube"></a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-3 col-12 ms-auto mt-4 mt-lg-0">
-                        <p class="copyright-text">Copyright © Medic Care 2021 
-                        <br><br>Design: <a href="https://templatemo.com" target="_parent">TemplateMo</a></p>
-                    </div>
-
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer-section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5><i class="fa-solid fa-heart-pulse"></i> MediCare Plus</h5>
+                    <p class="small text-muted mt-2">Providing quality healthcare since 2020. Your trusted medical partner.</p>
                 </div>
-            </section>
-        </footer>
+                <div class="col-md-4 mb-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled small">
+                        <li><a href="#home" class="text-decoration-none">Home</a></li>
+                        <li><a href="#services" class="text-decoration-none">Services</a></li>
+                        <li><a href="#booking" class="text-decoration-none">Booking</a></li>
+                        <li><a href="#feedback" class="text-decoration-none">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Follow Us</h5>
+                    <div class="social-links mt-2">
+                        <a href="https://facebook.com/" class="me-2" target="_blank" rel="noopener"><i class="fa-brands fa-facebook fa-lg"></i></a>
+                        <a href="https://twitter.com/" class="me-2" target="_blank" rel="noopener"><i class="fa-brands fa-twitter fa-lg"></i></a>
+                        <a href="https://instagram.com/" class="me-2" target="_blank" rel="noopener"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                        <a href="https://linkedin.com/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="small text-muted mb-0">&copy; 2024 MediCare Plus <em>F1040</em></p>
+        </div>
+    </footer>
 
-        <!-- JAVASCRIPT FILES -->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
-        <script src="js/scrollspy.min.js"></script>
-        <script src="js/custom.js"></script>
-<!--
-
-TemplateMo 566 Medic Care
-
-https://templatemo.com/tm-566-medic-care
-
--->
-    </body>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
 </html>

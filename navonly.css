@@ -17,6 +17,10 @@
     box-sizing: border-box;
 }
 
+body {
+    padding-top: 5vh;
+}
+
 /* ===== NAVBAR ===== */
 #mainNavbar {
     background-color: var(--white);
@@ -65,3 +69,5 @@
     transform: translateY(-1px);
     box-shadow: 0 4px 12px rgba(66, 165, 245, 0.4);
 }
+
+
